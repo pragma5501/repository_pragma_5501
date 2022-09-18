@@ -1,0 +1,52 @@
+* {
+    outline: 0;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background:linear-gradient(rgb(7, 11, 52), rgb(20, 24, 82),rgb(43, 47, 119), rgb(72, 52, 117), rgb(107, 73, 132), rgb(133, 89, 136));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    color: white;
+    
+}
+h3 {
+    color: white;
+}
+.box {
+    z-index: 7;
+    position:absolute;
+
+}
+.h1box {
+    z-index: 7;
+    position:absolute;
+    top: 100px;
+    
+    border-radius: 50%;
+
+}
+button {
+    width: 300px;
+    height: 150px;
+    position:absolute;
+    top: 50px;
+}

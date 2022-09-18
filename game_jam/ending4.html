@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang = "kr">
+    <head>
+        <meta name="viewport" content="initial-scale=1, user-scalable=0, width=device-width, maximum-scale=1">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="./css_file/style.css">
+        <title>game_jam</title>
+    </head>
+    <body>
+        <div class="inner t"></div> <div class="inner2 t"></div> <div class="inner3 t"></div> <div class="outer t"></div> 
+        <style> 
+            .t {  width: 100px; height: 100px; position: absolute; } 
+            .inner { top:100px; width: 50px; height: 50px; z-index: 4; background: #120f58; border-radius: 50%; } 
+            .inner2 {top:50px; z-index:3; background: linear-gradient(rgb(72, 52, 117), rgb(107, 73, 132), rgb(133, 89, 136)); border-radius: 50%; width: 150px; height:150px; } 
+            .inner3 {top: 0px; z-index:2; background: linear-gradient(rgb(7, 11, 52), rgb(20, 24, 82),rgb(43, 47, 119)); width: 250px; height: 250px; border-radius: 50%; } 
+            .outer { top:50px; z-index: 1;width: 300px; height: 150px; background: linear-gradient(rgb(43, 47, 119), rgb(72, 52, 117), rgb(107, 73, 132)); } 
+        </style>
+        <div class="doco"></div>
+        <div class="h1box">
+            
+            <h1>동글동글 마녀</h1>
+            <h1 id="ending" style="position:absolute;left:70px;">ending</h1>
+        </div>
+        
+        <div class="box">
+
+            <h3 class="story">계속 마녀로 몰리던 동글동글이는 네모로부터 저항하다가, 막다른 길에 마주하였습니다. </h3>
+            <h3 class="story">어쩔 수 없었던 동글동글이는 네모들을 모두 죽여버린후,  </h3>
+            <h3 class="story">윤회의 순리의 일부가 되는 선택을 하고 말았습니다.</h3>
+            <h3 class="story">그 절벽에는 침묵의 비명이 흐르는 사산혈해만이 존재하게 되었습니다.</h3>
+            </h3>
+        </div>
+        <img id="endingImage"src="./ending_folder/ending4.png" style="visibility:hidden; z-index:7" width="100%" height="100%">
+        <script>
+            document.getElementById("ending").onclick = function() {
+                document.getElementById("endingImage").style.visibility="visible";
+
+            };
+
+        </script>
+    </body>
+</html>
